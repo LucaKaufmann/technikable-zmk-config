@@ -23,7 +23,8 @@
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
 
-#define BT(n) BT_SEL n/ {
+#define BT(n) BT_SEL 
+/ {
     chosen {
        zmk,matrix_transform =
 #ifdef TBLE_DUAL_2U
@@ -34,7 +35,9 @@
                        &ortho_transform;
 #endif
     };
+};
 
+/ {
     keymap {
         compatible = "zmk,keymap";
 
